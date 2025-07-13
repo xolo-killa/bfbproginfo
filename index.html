@@ -51,7 +51,8 @@
     function closeApp() {
       if (window.Telegram && Telegram.WebApp) Telegram.WebApp.close();
     }
-    tg.expand()
+    const tg = window.Telegram.WebApp;
+    tg.expand();
   </script>
 </body>
 </html>
